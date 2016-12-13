@@ -1,5 +1,7 @@
 # Christmas Lecture 2016
 
+The finished page: https://portsoc.github.io/xmas2016/
+
 Every year we keep schedule a little slack around Christmas so that if there are any unforseen circumstances in the term we have a week spare in which to re-schedule key work.
 
 In today's lecture, we opened an blank editor and a browser side by side, and opened the floor to requests for what to add.  We coded for the full 50 minutes that were available and last request (snow) came in as everyone was leaving, so we pulled the snow code from last year's festive page.
