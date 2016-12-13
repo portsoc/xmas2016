@@ -1,0 +1,192 @@
+body {
+    font-size: 3vmin;
+    font-family: sans-serif;
+}
+
+#logo {
+    position: absolute;
+    top: 4vmin;
+    right: 4vmin;
+    width: 20vmin;
+}
+
+.trunk {
+    width: 2em;
+    height: 20em;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 10em;
+}
+
+.leaves {
+    background: transparent;
+    border-left: 10em solid transparent;
+    border-bottom: 10em solid green;
+    border-right: 10em solid transparent;
+    border-top: 0em solid transparent;
+    display: block;
+    width: 0;
+    height: 0;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 5em;
+}
+
+
+.leaves.l1 {
+    border-left-width: 6em;
+    border-right-width: 6em;
+}
+
+.leaves.l2 {
+    top: 11em;
+    border-left-width: 8em;
+    border-right-width: 8em;
+}
+
+.leaves.l3 {
+    top: 17em;
+}
+
+.leaves:nth-of-type(odd) {
+    border-bottom-color: #083;
+}
+
+.treesizedbox {
+    position: absolute;
+    width: 20em;
+    height: 30em;
+    top: 4em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bauble {
+    position: absolute;
+    top: 5em;
+}
+
+.bauble.l0 { left: 45%; top: 3em; }
+.bauble.l1 { left: 50%; top: 6.6em; }
+.bauble.l2 { left: 42%; top: 13em; }
+.bauble.l3 { left: 69%; top: 8.5em; }
+.bauble.l4 { left: 55%; top: 20em; }
+.bauble.l5 { left: 36%; top: 18.1em; }
+.bauble.l6 { left: 33%; top: 7em; }
+.bauble.l7 { left: 65%; top: 13em; }
+.bauble.l8 { left: 20%; top: 14em; }
+.bauble.l9 { left: 60%; top: 15em; }
+.bauble.la { left: 85%; top: 21em; }
+.bauble.lb { left: 15%; top: 20em; }
+
+.star {
+    font-size: 5em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -.6em;
+}
+
+body {
+    background-color: #a33;
+    overflow: hidden;
+}
+
+.snow {
+    border-radius: 50%/100px 100px 0 0;
+    background: white;
+    height: 100em;
+    justify-content: center;
+    align-content: top;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.snowmanbox {
+    position: fixed;
+    left: 2em;     /* snowman is very far left, blame J. Corbyn */
+    height: 14em;
+    width: 10em;
+    top: 16em;
+    text-align: center;
+}
+
+.snowmanbox:hover {
+    text-align: right;
+}
+
+.snowmanbox > * {
+    background-color: white;
+    border-radius: 1em;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    font-size: 500%;
+    margin-bottom: -.4em;
+}
+
+.snowmanbox .head .eyes {
+    font-size: 2vmin;
+    display: inline-block;
+    position: absolute;
+    top: 4vmin;
+    left: 0;
+    right: 0;
+}
+
+.snowmanbox .head .nose {
+    font-size: 4vmin;
+    display: inline-block;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 6vmin;
+    color: orange;
+}
+
+
+.snowmanbox .head {
+    padding: 0;
+    overflow: hidden;
+}
+
+.snowmanbox .body {
+    font-size: 700%;
+}
+
+.snowmanbox .butt {
+    font-size: 900%;
+}
+
+.g1 {
+    animation: f1 5s infinite ease-in-out;
+}
+
+.g2 {
+    animation: f1 5s 2.5s infinite ease-in-out;
+}
+
+
+@keyframes f1 {
+    0%,100% {
+        text-shadow: 0 0 0 yellow
+    }
+
+    50% {
+        text-shadow: 0 0 1em yellow, 0 0 1em yellow, 0 0 1em yellow;
+    }
+}
+
+#msg {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+
+#sn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.f1 {
+    border: none;
+    animation: fone 50s infinite;
+}
+
+.f2 {
+    border: none;
+    animation: ftwo 60s infinite;
+}
+
+@keyframes fone {
+  0% {transform: translateX(0px) translateY(0px) rotate(0deg); opacity: 0; }
+  25% {opacity: 0.75; }
+  100% {transform: translateX(-400px) translateY(3000px) rotate(120deg); opacity: 0; }
+}
+
+@keyframes ftwo {
+    0% {transform: translateX(0px) translateY(0px) rotate(0deg); opacity: 0; }
+  25% {opacity: 0.5; }
+  100% {transform: translateX(-800px) translateY(4000px) rotate(220deg); opacity: 0; }
+}
+
+.hidden {
+/*    display: none; */
+}
